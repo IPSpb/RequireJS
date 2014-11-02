@@ -10,6 +10,5 @@ require(['Models/User', 'Controllers/ListController', 'Controllers/AddController
 
     localStorage.users = JSON.stringify(users);
 
-    ListController.start();
     AddController.start();
 });
