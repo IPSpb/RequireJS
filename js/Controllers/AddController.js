@@ -1,3 +1,10 @@
-/**
- * Created by igor on 02.11.14.
- */
+define(['Views/AddView'], function(AddView){
+
+    function start() {
+        AddView.render();
+    }
+
+    return {
+        start:start
+    }
+});
