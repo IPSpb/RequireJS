@@ -1,11 +1,13 @@
 var MyMath = (function() {
 
-    //Здесь объвляются частные переменные и функциии
+    //С этим патерном вы можете использовать обычное описание функций:
+
+    function add(a, b) {
+        return a + b;
+    }
 
     return {
-      add : function(a, b) {
-          return a+b;
-      }
+      add : add
     };
 })();
 console.log(MyMath.add(1, 2));
